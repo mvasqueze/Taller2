@@ -1,0 +1,58 @@
+{
+    "1":{
+        "id":"001",
+        "Nombre":"Favi-o",
+        "Altura":"1.78m",
+        "Habilidad":"Canto",
+        "Imagen":"File 1",
+        "Frase":"San Valen, valen, valentín"
+    },
+    "2":{
+        "id":"002",
+        "Nombre":"Bangladesh",
+        "Altura":"160m",
+        "Habilidad":"Consumo de plantas",
+        "Imagen":"File 2",
+        "Frase":"Estoy crochis"
+    },
+    "3":{
+        "id":"003",
+        "Nombre":"Pataecabra",
+        "Altura":"1.55m",
+        "Habilidad":"Armas blancas",
+        "Imagen":"File 3",
+        "Frase":"Le metí 31 puñaladas"
+    },
+    "4":{
+        "id":"004",
+        "Nombre":"Gallego",
+        "Altura":"1.80",
+        "Habilidad":"Esquivar balas",
+        "Imagen":"File 4",
+        "Frase":"Yo tengo un ángel que me protege de los envidiosos"
+    },
+    "5":{
+        "id":"005",
+        "Nombre":"Gambeta",
+        "Altura":"1.78m",
+        "Habilidad":"Parla, disuación",
+        "Imagen":"File 5",
+        "Frase":"Pregunte por lo que no vea, bueno, bonito y barato"
+    },
+    "6":{
+        "id":"006",
+        "Nombre":"Kaztro",
+        "Altura":"1.75",
+        "Habilidad":"Aturdimiento",
+        "Imagen":"File 6",
+        "Frase":"Nací por mi madre, moriré por el verde"
+    },
+    "7":{
+        "id":"007",
+        "Nombre":"Fazeta",
+        "Altura":"1.67m",
+        "Habilidad":"Velocidad",
+        "Imagen":"File 7",
+        "Frase":"Con esta DT atracaba mi cucho"
+    }
+}
