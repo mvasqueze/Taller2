@@ -16,7 +16,7 @@ id: pokenea.id,
 Nombre: pokenea.Nombre,
 Altura: pokenea.Altura,
 Habilidad: pokenea.Habilidad,
-//Contenedor: process.env.HOSTNAME // Obtener el nombre del contenedor desde la variable de entorno HOSTNAME
+Contenedor: process.env.HOSTNAME // Obtener el nombre del contenedor desde la variable de entorno HOSTNAME
 };
 
 // Enviar el objeto como respuesta

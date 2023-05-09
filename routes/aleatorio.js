@@ -14,7 +14,7 @@ const pokenea = pokeneas[randomNumber];
 const pokeneaInfo = {
     imagen: pokenea.Imagen,
     frase: pokenea.Frase,
-    //Contenedor: process.env.HOSTNAME // Obtener el nombre del contenedor desde la variable de entorno HOSTNAME
+    Contenedor: process.env.HOSTNAME // Obtener el nombre del contenedor desde la variable de entorno HOSTNAME
   };
 
 // Enviar el objeto como respuesta
