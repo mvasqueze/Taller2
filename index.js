@@ -4,7 +4,7 @@ const pokeneaRouter = require('./routes/pokeneas');
 const aleatorioRouter = require('./routes/aleatorio');
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 app.use('/pokenea', pokeneaRouter);
 app.use('/aleatorio', aleatorioRouter);
