@@ -9,14 +9,14 @@ const randomNumber = Math.floor(Math.random() * Object.keys(pokeneas).length) + 
 
 // Obtener el Pokenea correspondiente al número aleatorio
 const pokenea = pokeneas[randomNumber];
-
+const containerId = os.hostname();
 // Crear un objeto con las propiedades que se desean mostrar
 const pokeneaInfo = {
 id: pokenea.id,
 Nombre: pokenea.Nombre,
 Altura: pokenea.Altura,
 Habilidad: pokenea.Habilidad,
-Contenedor: process.env.HOSTNAME // Obtener el nombre del contenedor desde la variable de entorno HOSTNAME
+Contenedor: containerId // Obtener el nombre del contenedor desde la variable de entorno HOSTNAME
 };
 
 // Enviar el objeto como respuesta
