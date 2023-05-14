@@ -1,24 +1,36 @@
-const express = require('express')
-const pokeneas = require('../pokeneas.json')
+const express = require('express');
+const pokeneas = require('../pokeneas.json');
 
 const router = express.Router();
 
 router.get('/', (req, res) => {
-// Obtener un número aleatorio entre 1 y la cantidad de Pokeneas que tienes
-const randomNumber = Math.floor(Math.random() * Object.keys(pokeneas).length) + 1;
+  // Obtener un número aleatorio entre 1 y la cantidad de Pokeneas que tienes
+  const randomNumber = Math.floor(Math.random() * Object.keys(pokeneas).length) + 1;
 
-// Obtener el Pokenea correspondiente al número aleatorio
-const pokenea = pokeneas[randomNumber];
+  // Obtener el Pokenea correspondiente al número aleatorio
+  const pokenea = pokeneas[randomNumber];
 
-// Crear un objeto con las propiedades que se desean mostrar
-const pokeneaInfo = {
-    imagen: pokenea.Imagen,
+  // Obtener la URL completa de la imagen en el bucket público de GCS
+  const imageBucketUrl = 'https://storage.googleapis.com/taller2-pokeneas1/';
+  const imageUrl = imageBucketUrl + pokenea.Imagen;
+
+  // Crear un objeto con las propiedades que se desean mostrar
+  const pokeneaInfo = {
+    imagen: imageUrl,
     frase: pokenea.Frase,
     Contenedor: process.env.HOSTNAME // Obtener el nombre del contenedor desde la variable de entorno HOSTNAME
   };
 
-// Enviar el objeto como respuesta
-res.json(pokeneaInfo);
+  // Renderizar la imagen y la frase en una página HTML
+  res.send(`
+    <html>
+      <body>
+        <h1>Pokenea Information</h1>
+        <img src="${pokeneaInfo.imagen}" alt="Pokenea Image" width="300" height="300">
+        <p>${pokeneaInfo.frase}</p>
+      </body>
+    </html>
+  `);
 });
 
 module.exports = router;
