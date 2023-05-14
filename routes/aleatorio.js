@@ -1,6 +1,6 @@
 const express = require('express');
 const pokeneas = require('../pokeneas.json');
-
+const os = require("os")
 const router = express.Router();
 
 router.get('/', (req, res) => {
